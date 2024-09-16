@@ -1,0 +1,197 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 16 2024 15:49:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (37) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00011000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 00017000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00020000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2a598h (173464) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=0004a5c0 vaddr=3ffb0000 size=05098h ( 20632) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0004f660 vaddr=40080000 size=009b8h (  2488) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=a0390h (656272) map[0m
+[0;32mI (335) esp_image: segment 4: paddr=000f03b8 vaddr=400809b8 size=1c5f8h (116216) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (397) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (397) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (397) esp_psram: Speed: 80MHz[0m
+[0;32mI (401) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (408) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (933) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (941) cpu_start: Pro cpu start user code[0m
+[0;32mI (941) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (941) app_init: Application information:[0m
+[0;32mI (944) app_init: Project name:     camera_example[0m
+[0;32mI (949) app_init: App version:      1[0m
+[0;32mI (953) app_init: Compile time:     Sep 16 2024 15:49:31[0m
+[0;32mI (959) app_init: ELF file SHA256:  beccea6f8...[0m
+[0;32mI (965) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (970) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (975) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (980) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (985) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (992) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (998) heap_init: At 3FFB93B0 len 00026C50 (155 KiB): DRAM[0m
+[0;32mI (1004) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1010) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1017) heap_init: At 4009CFB0 len 00003050 (12 KiB): IRAM[0m
+[0;32mI (1023) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1031) spi_flash: detected chip: generic[0m
+[0;32mI (1035) spi_flash: flash io: qio[0m
+[0;33mW (1040) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1051) main_task: Started on CPU0[0m
+[0;32mI (1055) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1063) main_task: Calling app_main()[0m
+[0;32mI (1091) PSRAM: PSRAM initialized successfully[0m
+[0;32mI (1091) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1095) cam_hal: cam init ok[0m
+[0;32mI (1098) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1102) sccb: sccb_i2c_port=1[0m
+[0;32mI (1106) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1145) camera: Detected camera at address=0x3c[0m
+[0;32mI (1147) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1149) camera: Detected OV5640 camera[0m
+[0;32mI (1149) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1861) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (1861) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (1867) cam_hal: cam config ok[0m
+[0;32mI (1887) ov5640: Set PLL: bypass: 0, multiplier: 180, sys_div: 4, pre_div: 2, root_2x: 0, pclk_root_div: 2, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (1889) ov5640: Calculated XVCLK: 20000000 Hz, REFIN: 10000000 Hz, VCO: 1800000000 Hz, PLL_CLK: 180000000 Hz, SYSCLK: 45000000 Hz, PCLK: 11250000 Hz[0m
+I (1933) wifi:wifi driver task: 3ffd1ebc, prio:23, stack:6656, core=0
+I (1944) wifi:wifi firmware version: 0caa81945
+I (1944) wifi:wifi certification version: v7.0
+I (1944) wifi:config NVS flash: enabled
+I (1945) wifi:config nano formating: disabled
+I (1949) wifi:Init data frame dynamic rx buffer num: 32
+I (1954) wifi:Init static rx mgmt buffer num: 5
+I (1958) wifi:Init management short buffer num: 32
+I (1963) wifi:Init static tx buffer num: 16
+I (1968) wifi:Init tx cache buffer num: 32
+I (1971) wifi:Init static rx buffer size: 1600
+I (1975) wifi:Init static rx buffer num: 10
+I (1979) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1983) wifi_init: rx ba win: 6[0m
+[0;32mI (1986) wifi_init: accept mbox: 6[0m
+[0;32mI (1991) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1995) wifi_init: udp mbox: 6[0m
+[0;32mI (1998) wifi_init: tcp mbox: 6[0m
+[0;32mI (2002) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2007) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2011) wifi_init: tcp mss: 1440[0m
+[0;32mI (2015) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2019) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2026) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (2100) wifi:mode : sta (40:f5:20:7f:d4:d0)
+I (2100) wifi:enable tsf
+[0;32mI (2101) camera_stream: wifi_init_sta finished.[0m
+I (2146) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (2147) wifi:state: init -> auth (0xb0)
+I (2153) wifi:state: auth -> assoc (0x0)
+I (2162) wifi:state: assoc -> run (0x10)
+I (2326) wifi:connected with Daniel iPhone, aid = 2, channel 6, BW20, bssid = 3e:db:65:ba:e4:3e
+I (2326) wifi:security: WPA2-PSK, phy: bgn, rssi: -35
+I (2331) wifi:pm start, type: 1
+
+I (2331) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2350) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3341) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (3342) camera_stream: got ip:172.20.10.3[0m
+[0;32mI (3344) camera_stream: connected to ap SSID:Daniel iPhone password:pinghsiang[0m
+[0;32mI (3355) main_task: Returned from app_main()[0m
+I (11878) wifi:<ba-add>idx:0 (ifx:0, 3e:db:65:ba:e4:3e), tid:0, ssn:2, winSize:64
+[0;33mW (12208) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (12766) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (12953) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (13247) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (14739) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (15361) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (15465) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (15939) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (16264) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (16541) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (18335) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (20349) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (21730) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (22119) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (22178) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (22251) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (22352) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (22628) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (23110) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (24050) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (24339) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (26142) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (27364) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (29867) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (31030) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (31442) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (32573) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (130229) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (131539) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (133930) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (135233) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (135438) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (136737) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (138963) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (139027) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (142209) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (143432) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (143525) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (143949) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (145140) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (147871) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (148325) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (150224) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (152850) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (156832) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (156940) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (157438) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (157530) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (158524) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (158947) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (161542) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (162846) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (163743) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (164555) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (165687) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (167039) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (167235) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (171195) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (171233) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (172649) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (173252) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (173424) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (174552) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (175632) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (176038) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (177436) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (178992) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (181804) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (181949) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (184535) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (185678) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (186136) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (187444) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (188240) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (189597) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (233612) httpd_txrx: httpd_sock_err: error in recv : 104[0m
